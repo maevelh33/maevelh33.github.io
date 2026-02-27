@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Youtube, Instagram, BookOpen, Calendar } from "lucide-react";
+import { Youtube, Instagram, BookOpen, Calendar, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const FadeIn = ({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) => {
@@ -33,7 +33,7 @@ const ServicesSection = () => {
         </FadeIn>
 
         {/* Links */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {externalLinks.map((link, i) => (
             <FadeIn key={link.label} delay={i * 0.1}>
               <a
@@ -57,6 +57,18 @@ const ServicesSection = () => {
               <h3 className="font-display text-lg font-medium text-foreground mb-1">Livres</h3>
               <p className="font-body text-sm text-muted-foreground">Mes ouvrages et essais</p>
             </Link>
+          </FadeIn>
+          <FadeIn delay={0.3}>
+            <a
+              href="https://ko-fi.com/mlhorion"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-6 bg-card border border-border rounded hover:border-bordeaux/40 transition-colors group"
+            >
+              <Heart className="w-5 h-5 text-muted-foreground group-hover:text-bordeaux transition-colors mb-4" />
+              <h3 className="font-display text-lg font-medium text-foreground mb-1">Ko-fi</h3>
+              <p className="font-body text-sm text-muted-foreground">Me soutenir par un don</p>
+            </a>
           </FadeIn>
         </div>
 
