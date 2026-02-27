@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Youtube, Instagram, BookOpen, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FadeIn = ({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) => {
   const ref = useRef(null);
@@ -12,10 +13,9 @@ const FadeIn = ({ children, delay = 0, className = "" }: { children: React.React
   );
 };
 
-const links = [
-  { icon: Youtube, label: "YouTube", desc: "Philosophie, psychologie, patrimoine", href: "#" },
-  { icon: Instagram, label: "Instagram", desc: "Réflexions & coulisses", href: "#" },
-  { icon: BookOpen, label: "Livres", desc: "Mes ouvrages et essais", href: "#" },
+const externalLinks = [
+  { icon: Youtube, label: "YouTube", desc: "Philosophie, psychologie, patrimoine", href: "https://www.youtube.com/@mlhorion" },
+  { icon: Instagram, label: "Instagram", desc: "Réflexions & coulisses", href: "https://www.instagram.com/mlh.orion" },
 ];
 
 const ServicesSection = () => {
@@ -34,7 +34,7 @@ const ServicesSection = () => {
 
         {/* Links */}
         <div className="grid md:grid-cols-3 gap-6 mb-16">
-          {links.map((link, i) => (
+          {externalLinks.map((link, i) => (
             <FadeIn key={link.label} delay={i * 0.1}>
               <a
                 href={link.href}
@@ -48,6 +48,16 @@ const ServicesSection = () => {
               </a>
             </FadeIn>
           ))}
+          <FadeIn delay={0.2}>
+            <Link
+              to="/livres"
+              className="block p-6 bg-card border border-border rounded hover:border-bordeaux/40 transition-colors group"
+            >
+              <BookOpen className="w-5 h-5 text-muted-foreground group-hover:text-bordeaux transition-colors mb-4" />
+              <h3 className="font-display text-lg font-medium text-foreground mb-1">Livres</h3>
+              <p className="font-body text-sm text-muted-foreground">Mes ouvrages et essais</p>
+            </Link>
+          </FadeIn>
         </div>
 
         {/* Booking */}
