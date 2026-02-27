@@ -84,7 +84,9 @@ const ServicesSection = () => {
               Je propose des appels sur rendez-vous.
             </p>
             <a
-              href="mailto:contact@mlhorion.com?subject=Demande de rendez-vous"
+              href="https://tally.so/r/9qdl7p"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block font-body text-sm tracking-[0.2em] uppercase px-8 py-3 border border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors"
             >
               Prendre rendez-vous
