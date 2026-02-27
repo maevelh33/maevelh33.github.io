@@ -96,17 +96,21 @@ const Livres = () => {
             <h2 className="font-display text-2xl md:text-3xl font-light text-foreground mb-4">
               Substack
             </h2>
-            <p className="font-body text-base leading-[1.9] text-muted-foreground mb-6">
-              Retrouvez mes réflexions, essais et textes plus longs sur mon Substack. 
-              Un espace d'écriture libre, approfondi, sans contrainte de format.
-            </p>
+            <div className="space-y-4 mb-8">
+              <p className="font-body text-base leading-[1.9] text-muted-foreground">
+                Pensées, articles, essais, poèmes… Mon Substack est l'espace où je dépose tout ce qui ne prend pas la forme d'un livre. Des textes libres, sur des sujets variés, écrits avec la même exigence et la même sincérité.
+              </p>
+              <p className="font-body text-base leading-[1.9] text-muted-foreground">
+                L'abonnement est <strong className="text-foreground">entièrement gratuit</strong>. Pour celles et ceux qui souhaitent me soutenir et accéder à mes articles les plus longs et approfondis, une option à <strong className="text-foreground">5 € / mois</strong> est disponible.
+              </p>
+            </div>
             <a
-              href="#"
+              href="https://substack.com/@mlhorion"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block font-body text-sm tracking-[0.2em] uppercase px-8 py-3 border border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors"
             >
-              Lire sur Substack
+              Découvrir mon Substack
             </a>
           </div>
         </FadeIn>
