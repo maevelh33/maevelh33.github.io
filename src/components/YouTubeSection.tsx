@@ -65,10 +65,11 @@ const YouTubeSection = () => {
               sans dicter, qui transmet sans abrutir, qui respecte l'intelligence de celles et ceux
               qui regardent.
             </p>
+            <p className="font-body text-base leading-[1.9] text-muted-foreground mb-4">
+              Dans un monde saturé d'idées, où l'on confond l'intensité avec la vérité et l'imitation avec la pensée, ma chaîne ne cherche pas à séduire par l'excès. Nous vivons dans une époque ivre d'images rapides, de contenu IA, de jugements hâtifs, et de polémiques stériles. Le sensationnel y règne sans profondeur. Les opinions se caricaturent, se radicalisent et ne se rencontrent plus. Beaucoup exploitent les émotions immédiates, simplifient à l'extrême des réalités complexes, car c'est plus consommable que la nuance. Là où d'autres divisent, j'unifie. Là où d'autres exploitent, je questionne. Là où d'autres assènent, j'invite à réfléchir.
+            </p>
             <p className="font-body text-base leading-[1.9] text-muted-foreground">
-              Je veux également permettre au plus grand nombre de découvrir des métiers oubliés,
-              ainsi que notre patrimoine — tout ce qui embellit ce monde et que l'on oublie
-              et délaisse pour le profit.
+              J'invite à la <em>phronesis</em>&nbsp;; une prudence active, une sagesse pratique qui ne se contente pas de savoir, mais qui cherche le juste discernement dans l'action. Une intelligence capable de tenir ensemble complexité et clarté, principe et humanité. Je m'efforce de réhabiliter la nuance, la profondeur, et la responsabilité intérieure. Car réfléchir véritablement, c'est accepter l'inconfort&nbsp;; c'est renoncer aux certitudes faciles pour approcher une compréhension plus exigeante.
             </p>
           </div>
         </FadeIn>
